@@ -15,9 +15,10 @@ BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Reimplementation of libmysqlclient library, using Carob to benefit from
-clustering. So, native mysql client programs can use the Sequoia clustering
-solution without changing any line of code in the application.
+Reimplementation of libmysqlclient library, using Carob to benefit
+from clustering. So, native mysql client programs can use the Sequoia
+clustering solution without changing any line of code in the
+application.
 
 %package devel
 Summary:	Header files for libmysequoia library
@@ -26,7 +27,8 @@ Group:		Development/Libraries
 #Requires:	%{name} = %{version}-%{release}
 
 %description devel
-This is the package containing the header files for libmysequoia library.
+This is the package containing the header files for libmysequoia
+library.
 
 %description devel -l pl
 Ten pakiet zawiera pliki nag³ówkowe biblioteki libmysequoia.
@@ -72,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/libmysequoia.so.*.*.*
-/etc/*
+%{_sysconfdir}/*
 
 %files devel
 %defattr(644,root,root,755)
