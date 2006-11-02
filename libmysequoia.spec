@@ -11,6 +11,7 @@ URL:		http://carob.continuent.org/LibMySequoia
 BuildRequires:	autoconf
 BuildRequires:	carob-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	log4cxx-devel
 BuildRequires:	mysql-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
