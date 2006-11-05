@@ -1,5 +1,5 @@
 Summary:	Alternative libmysqlclient library
-Summary(pl):	-
+Summary(pl):	Alternatywna biblioteka libmysqlclient
 Name:		libmysequoia
 Version:	0.9.3
 Release:	0.1
@@ -17,15 +17,22 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Reimplementation of libmysqlclient library, using Carob to benefit
-from clustering. So, native mysql client programs can use the Sequoia
+from clustering. So, native MySQL client programs can use the Sequoia
 clustering solution without changing any line of code in the
 application.
 
+%description -l pl
+Reimplementacja biblioteki libmysqlclient z u¿yciem Caroba dla zysków
+z klastrowania. W ten sposób natywne programy klienckie MySQL-a mog±
+u¿ywaæ rozwi±zania klastrowego Sequoia bez zmiany ani jednej linii
+kodu w aplikacji.
+
+# XXX: where are "header files"???
 %package devel
 Summary:	Header files for libmysequoia library
 Summary(pl):	Pliki nag³ówkowe biblioteki libmysequoia
 Group:		Development/Libraries
-#Requires:	%{name} = %{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This is the package containing the header files for libmysequoia
@@ -52,7 +59,6 @@ Statyczna biblioteka libmysequoia.
 %build
 %{__autoconf}
 %configure
-#{__make}
 
 %{__make} \
 	CFLAGS="%{rpmcflags}" \
