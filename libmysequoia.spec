@@ -1,5 +1,5 @@
 Summary:	Alternative libmysqlclient library
-Summary(pl):	Alternatywna biblioteka libmysqlclient
+Summary(pl.UTF-8):   Alternatywna biblioteka libmysqlclient
 Name:		libmysequoia
 Version:	0.9.3
 Release:	0.1
@@ -21,16 +21,16 @@ from clustering. So, native MySQL client programs can use the Sequoia
 clustering solution without changing any line of code in the
 application.
 
-%description -l pl
-Reimplementacja biblioteki libmysqlclient z u¿yciem Caroba dla zysków
-z klastrowania. W ten sposób natywne programy klienckie MySQL-a mog±
-u¿ywaæ rozwi±zania klastrowego Sequoia bez zmiany ani jednej linii
+%description -l pl.UTF-8
+Reimplementacja biblioteki libmysqlclient z uÅ¼yciem Caroba dla zyskÃ³w
+z klastrowania. W ten sposÃ³b natywne programy klienckie MySQL-a mogÄ…
+uÅ¼ywaÄ‡ rozwiÄ…zania klastrowego Sequoia bez zmiany ani jednej linii
 kodu w aplikacji.
 
 # XXX: where are "header files"???
 %package devel
 Summary:	Header files for libmysequoia library
-Summary(pl):	Pliki nag³ówkowe biblioteki libmysequoia
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libmysequoia
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -38,19 +38,19 @@ Requires:	%{name} = %{version}-%{release}
 This is the package containing the header files for libmysequoia
 library.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe biblioteki libmysequoia.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe biblioteki libmysequoia.
 
 %package static
 Summary:	Static libmysequoia library
-Summary(pl):	Statyczna biblioteka libmysequoia
+Summary(pl.UTF-8):   Statyczna biblioteka libmysequoia
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libmysequoia library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libmysequoia.
 
 %prep
