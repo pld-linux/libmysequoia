@@ -1,5 +1,5 @@
 Summary:	Alternative libmysqlclient library
-Summary(pl.UTF-8):   Alternatywna biblioteka libmysqlclient
+Summary(pl.UTF-8):	Alternatywna biblioteka libmysqlclient
 Name:		libmysequoia
 Version:	0.9.3
 Release:	0.1
@@ -30,7 +30,7 @@ kodu w aplikacji.
 # XXX: where are "header files"???
 %package devel
 Summary:	Header files for libmysequoia library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libmysequoia
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libmysequoia
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -43,7 +43,7 @@ Ten pakiet zawiera pliki nagłówkowe biblioteki libmysequoia.
 
 %package static
 Summary:	Static libmysequoia library
-Summary(pl.UTF-8):   Statyczna biblioteka libmysequoia
+Summary(pl.UTF-8):	Statyczna biblioteka libmysequoia
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
