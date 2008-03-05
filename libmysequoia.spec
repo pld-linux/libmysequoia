@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Alternatywna biblioteka libmysqlclient
 Name:		libmysequoia
 Version:	0.9.8
 Release:	1
-License:	Apache License 2.0
+License:	Apache v2.0
 Group:		Libraries
 Source0:	https://forge.continuent.org/frs/download.php/256/%{name}-%{version}.tar.gz
 # Source0-md5:	ab865c7cf6602f1780fbb7049e0e07d5
